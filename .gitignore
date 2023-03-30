@@ -5,3 +5,10 @@
 /test/
 /out/
 /run/
+
+/bots/
+/data/
+/logs/
+/plugin-libraries/
+/plugin-shared-libraries/
+/plugins/

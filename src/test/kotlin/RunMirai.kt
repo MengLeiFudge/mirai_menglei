@@ -44,3 +44,6 @@ suspend fun main() {
 
     MiraiConsole.job.join()
 }
+
+
+
