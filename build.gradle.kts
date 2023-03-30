@@ -23,12 +23,12 @@ repositories {
 
 dependencies {
     implementation("org.slf4j:slf4j-api:2.0.6")
-    implementation("ch.qos.logback:logback-core:1.4.5")
-    implementation("ch.qos.logback:logback-classic:1.4.5")
+    implementation("ch.qos.logback:logback-core:1.4.6")
+    implementation("ch.qos.logback:logback-classic:1.4.6")
     implementation("commons-io:commons-io:2.11.0")
     implementation("org.apache.commons:commons-collections4:4.4")
     implementation("org.dom4j:dom4j:2.1.4")
-    implementation("com.alibaba.fastjson2:fastjson2:2.0.23")
+    implementation("com.alibaba.fastjson2:fastjson2:2.0.26")
     implementation("com.google.guava:guava:31.1-jre")
     implementation("org.apache.httpcomponents.client5:httpclient5-fluent:5.2.1")
     implementation("com.google.zxing:javase:3.5.1")
