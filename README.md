@@ -1,22 +1,28 @@
-# mirai_plugin_example
-![Github](https://img.shields.io/badge/Author-Nambers-blue) ![GitHub](https://img.shields.io/github/license/Nambers/mirai_kotlin_example) ![GitHub repo size](https://img.shields.io/github/repo-size/Nambers/mirai_kotlin_example) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Nambers/mirai_kotlin_example) ![GitHub last commit](https://img.shields.io/github/last-commit/Nambers/mirai_kotlin_example)
-
-a simple example of mirai using kotlin and java
+# mirai_menglei
+![Github](https://img.shields.io/badge/Author-MengLei-blue)
+![GitHub](https://img.shields.io/github/license/MengLeiFudge/mirai_menglei)
+![GitHub repo size](https://img.shields.io/github/repo-size/MengLeiFudge/mirai_menglei)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/MengLeiFudge/mirai_menglei)
+![GitHub last commit](https://img.shields.io/github/last-commit/MengLeiFudge/mirai_menglei)
 
 一个简易的mirai(mirai-console)框架应用 包含kotlin或java版(在 `/src/main/java` 或 `/src/main/kotlin`目录下)
 
-> 本例子已通过[pull request](https://github.com/project-mirai/mirai-console-plugin-template/pull/8)同步到官方例子
+> 该bot主要用于Arc查询、Shapez查询等，推荐使用Intellij Idea打开本项目
 
 # 使用方法
 
-## 1. clone或下载本项目全部东西，可以不用下release
+## 1.Git Clone
 
 ## 2.更改gradle依赖到最新版
 
-依赖版本地址需自己按照[这里的最新版更改](https://bintray.com/him188moe/mirai/mirai-console/)或[这里](https://github.com/mamoe/mirai-console/blob/master/docs/ConfiguringProjects.md)，更改地址:build.gradle.kts下
+配置文件位置：build.gradle.kts
 
-![更改地址](https://img-blog.csdnimg.cn/20210120155108568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwODMyOTYw,size_16,color_FFFFFF,t_70)
+Mirai最新版本号请从[官网](https://github.com/mamoe/mirai)右侧Release中查看
 
-c++版(miraicp c++ SDK) <https://github.com/Nambers/MiraiCP>
+dependencies最新版本号请从[这里](https://mvnrepository.com/)查询
 
-可直接用idea打开本文件夹来打开项目
+## 3.修改想要登录的Bot的QQ和密码
+
+文件位置：src\test\kotlin\RunMirai.kt
+
+## 4.Run it！
