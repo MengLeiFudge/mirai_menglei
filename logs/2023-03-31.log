@@ -110,3 +110,35 @@ https://api.lolicon.app/setu/v2?size=original&num=20&r18=1&tag=%E8%B4%A5%E5%8C%9
 2023-03-31 01:01:11 I/Bot.2629227874: Bot cancelled: Job was cancelled
 2023-03-31 01:01:11 I/Bot.1443944862: Bot cancelled: Job was cancelled
 2023-03-31 01:01:11 I/Bot.3109326090: Bot cancelled: Job was cancelled
+2023-03-31 01:01:56 I/main: Starting mirai-console...
+2023-03-31 01:01:56 I/main: 
+
+==================================[ Mirai consosle 2.14.0 ]===================================
+ __       __ __                   __  ______                                      __
+|  \     /  \  \                 |  \/      \                                    |  \
+| ▓▓\   /  ▓▓\▓▓ ______   ______  \▓▓  ▓▓▓▓▓▓\ ______  _______   _______  ______ | ▓▓ ______
+| ▓▓▓\ /  ▓▓▓  \/      \ |      \|  \ ▓▓   \▓▓/      \|       \ /       \/      \| ▓▓/      \
+| ▓▓▓▓\  ▓▓▓▓ ▓▓  ▓▓▓▓▓▓\ \▓▓▓▓▓▓\ ▓▓ ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓▓\  ▓▓▓▓▓▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓▓▓▓▓\
+| ▓▓\▓▓ ▓▓ ▓▓ ▓▓ ▓▓   \▓▓/      ▓▓ ▓▓ ▓▓   __| ▓▓  | ▓▓ ▓▓  | ▓▓\▓▓    \| ▓▓  | ▓▓ ▓▓ ▓▓    ▓▓
+| ▓▓ \▓▓▓| ▓▓ ▓▓ ▓▓     |  ▓▓▓▓▓▓▓ ▓▓ ▓▓__/  \ ▓▓__/ ▓▓ ▓▓  | ▓▓_\▓▓▓▓▓▓\ ▓▓__/ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓
+| ▓▓  \▓ | ▓▓ ▓▓ ▓▓      \▓▓    ▓▓ ▓▓\▓▓    ▓▓\▓▓    ▓▓ ▓▓  | ▓▓       ▓▓\▓▓    ▓▓ ▓▓\▓▓     \
+ \▓▓      \▓▓\▓▓\▓▓       \▓▓▓▓▓▓▓\▓▓ \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓   \▓▓\▓▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓ \▓▓▓▓▓▓▓
+
+
+2023-03-31 01:01:56 I/main: Backend: version 2.14.0, built on 2023-02-06 14:25:21.
+2023-03-31 01:01:56 I/main: Frontend Terminal: version 2.14.0, provided by Mamoe Technologies
+2023-03-31 01:01:56 I/main: Welcome to visit https://mirai.mamoe.net/
+2023-03-31 01:01:57 W/stderr: SLF4J: Class path contains multiple SLF4J providers.
+2023-03-31 01:01:57 W/stderr: SLF4J: Found provider [net.mamoe.mirai.console.internal.logging.externalbind.slf4j.MiraiConsoleSLF4JService@45e22def]
+2023-03-31 01:01:57 W/stderr: SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@4417af13]
+2023-03-31 01:01:57 W/stderr: SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2023-03-31 01:01:57 W/stderr: SLF4J: Actual provider is of type [net.mamoe.mirai.console.internal.logging.externalbind.slf4j.MiraiConsoleSLF4JService@45e22def]
+2023-03-31 01:01:59 I/plugin: Successfully loaded plugin mirai-login-solver-sakura v0.0.8
+2023-03-31 01:01:59 I/main: Prepared built-in commands: autoLogin, help, login, logout, permission, status, stop
+2023-03-31 01:01:59 I/main: 1 plugin(s) enabled.
+2023-03-31 01:01:59 I/main: mirai-console started successfully.
+2023-03-31 01:02:00 I/Bot.2629227874: Loaded account secrets from local cache.
+2023-03-31 01:02:01 I/Bot.2629227874: Saved account secrets to local cache for fast login.
+2023-03-31 01:02:01 I/Bot.2629227874: Login successful.
+2023-03-31 01:02:04 V/Bot.2629227874: Event: BotOnlineEvent(bot=Bot(2629227874))
+2023-03-31 01:02:04 I/Bot.2629227874: Bot login successful.
