@@ -79,7 +79,16 @@ public final class JavaPluginMain extends JavaPlugin {
                     }
                 } else {
                     //对方禁用戳一戳，或当前bot戳一戳次数达到上限
-                    event.getSubject().sendMessage("莫欺少年穷，等我日后把你戳爆！");
+                    String s;
+                    double a = RandomUtils.getRandomDouble(0, 1);
+                    if (a < 0.2) {
+                        s = "谁让你戳我的？我戳……戳不动惹";
+                    } else if (a < 0.5) {
+                        s = "莫欺少年穷，等我日后把你戳爆！";
+                    } else {
+                        s = "痛痛痛……不要再戳我惹";
+                    }
+                    event.getSubject().sendMessage(s);
                 }
             } else {
                 //有人戳了别人，跟着戳一戳
