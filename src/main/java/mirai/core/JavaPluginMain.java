@@ -1,5 +1,6 @@
 package mirai.core;
 
+import mirai.utils.RandomUtils;
 import net.mamoe.mirai.Bot;
 import net.mamoe.mirai.console.plugin.jvm.JavaPlugin;
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescriptionBuilder;
@@ -66,8 +67,20 @@ public final class JavaPluginMain extends JavaPlugin {
             Bot bot = Bot.getInstances().get(0);
             if (event.getTarget().getId() == bot.getId()) {
                 //有人戳了bot，戳回去
-                event.getSubject().sendMessage("谁让你戳我的？我戳！");
-                event.getFrom().nudge().sendTo(event.getSubject());
+                if (event.getFrom().nudge().sendTo(event.getSubject())) {
+                    event.getSubject().sendMessage("谁让你戳我的？我戳！");
+                    if (RandomUtils.getRandomDouble(0, 1) < 0.5) {
+                        event.getFrom().nudge().sendTo(event.getSubject());
+                        event.getSubject().sendMessage("我再戳！");
+                        if (RandomUtils.getRandomDouble(0, 1) < 0.5) {
+                            event.getFrom().nudge().sendTo(event.getSubject());
+                            event.getSubject().sendMessage("我还戳！");
+                        }
+                    }
+                } else {
+                    //对方禁用戳一戳，或当前bot戳一戳次数达到上限
+                    event.getSubject().sendMessage("莫欺少年穷，等我日后把你戳爆！");
+                }
             } else {
                 //有人戳了别人，跟着戳一戳
                 event.getTarget().nudge().sendTo(event.getSubject());
