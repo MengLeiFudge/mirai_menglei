@@ -2,7 +2,7 @@ plugins {
     val kotlinVersion = "1.8.0"
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.serialization") version kotlinVersion
-    id("net.mamoe.mirai-console") version "2.14.0"
+    id("net.mamoe.mirai-console") version "2.15.0-M1"
     id("java")
 }
 
@@ -23,8 +23,9 @@ repositories {
 
 dependencies {
     implementation("org.slf4j:slf4j-api:2.0.6")
-    implementation("ch.qos.logback:logback-core:1.4.6")
-    implementation("ch.qos.logback:logback-classic:1.4.6")
+    //mirai已经有了自带的日志转换，不需要logback
+    //implementation("ch.qos.logback:logback-core:1.4.6")
+    //implementation("ch.qos.logback:logback-classic:1.4.6")
     implementation("commons-io:commons-io:2.11.0")
     implementation("org.apache.commons:commons-collections4:4.4")
     implementation("org.dom4j:dom4j:2.1.4")

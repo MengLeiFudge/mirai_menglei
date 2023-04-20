@@ -21,7 +21,7 @@ import static mirai.func.shapez.draw.ShapeViewer.drawShapeAndFullInfo;
 import static mirai.utils.MyFileUtils.getFile;
 
 /**
- * @author MengLeiFudge
+ * @author MengLeiFudge03
  */
 public class Process extends FuncProcess {
 

@@ -8,6 +8,8 @@
 一个简易的mirai(mirai-console)框架应用 包含kotlin或java版(在 `/src/main/java` 或 `/src/main/kotlin`目录下)
 
 > 该bot主要用于Arc查询、Shapez查询等，推荐使用Intellij Idea打开本项目
+> 
+> [Mirai论坛](https://mirai.mamoe.net/https://mirai.mamoe.net/)
 
 # 使用方法
 
@@ -17,7 +19,7 @@
 
 配置文件位置：build.gradle.kts
 
-Mirai最新版本号请从[官网](https://github.com/mamoe/mirai)右侧Release中查看
+Mirai最新版本号请从[官网](https://github.com/mamoe/mirai/releases)查看，带有后缀都不是稳定版，按情况选择
 
 dependencies最新版本号请从[这里](https://mvnrepository.com/)查询
 

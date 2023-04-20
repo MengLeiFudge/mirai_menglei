@@ -63,10 +63,15 @@ public final class JavaPluginMain extends JavaPlugin {
         });
         //监听戳一戳消息
         eventChannel.subscribeAlways(NudgeEvent.class, event -> {
-            // 如果戳了bot，那么就戳回去
-            event.getSubject().sendMessage("谁让你戳我的？我戳！");
             Bot bot = Bot.getInstances().get(0);
-            bot.nudge().sendTo(event.getSubject());
+            if (event.getTarget().getId() == bot.getId()) {
+                //有人戳了bot，戳回去
+                event.getSubject().sendMessage("谁让你戳我的？我戳！");
+                event.getFrom().nudge().sendTo(event.getSubject());
+            } else {
+                //有人戳了别人，跟着戳一戳
+                event.getTarget().nudge().sendTo(event.getSubject());
+            }
         });
     }
 }
