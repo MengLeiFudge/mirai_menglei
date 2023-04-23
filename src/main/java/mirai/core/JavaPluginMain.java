@@ -16,6 +16,7 @@ import net.mamoe.mirai.event.events.NudgeEvent;
 import net.mamoe.mirai.event.events.StrangerMessageEvent;
 
 import static mirai.utils.LogUtils.logger;
+import static mirai.utils.OtherUtils.sleep;
 
 /**
  * settings.gradle.kts  生成的插件.jar名称
@@ -65,14 +66,20 @@ public final class JavaPluginMain extends JavaPlugin {
         //监听戳一戳消息
         eventChannel.subscribeAlways(NudgeEvent.class, event -> {
             Bot bot = Bot.getInstances().get(0);
+            if (event.getFrom().getId() == bot.getId()) {
+                return;
+            }
+            int randInt = RandomUtils.getRandomInt(0, 2);
             if (event.getTarget().getId() == bot.getId()) {
                 //有人戳了bot，戳回去
                 if (event.getFrom().nudge().sendTo(event.getSubject())) {
                     event.getSubject().sendMessage("谁让你戳我的？我戳！");
-                    if (RandomUtils.getRandomDouble(0, 1) < 0.5) {
+                    if (randInt >= 1) {
+                        sleep(1000);
                         event.getFrom().nudge().sendTo(event.getSubject());
                         event.getSubject().sendMessage("我再戳！");
-                        if (RandomUtils.getRandomDouble(0, 1) < 0.5) {
+                        if (randInt >= 2) {
+                            sleep(1000);
                             event.getFrom().nudge().sendTo(event.getSubject());
                             event.getSubject().sendMessage("我还戳！");
                         }
@@ -80,19 +87,23 @@ public final class JavaPluginMain extends JavaPlugin {
                 } else {
                     //对方禁用戳一戳，或当前bot戳一戳次数达到上限
                     String s;
-                    double a = RandomUtils.getRandomDouble(0, 1);
-                    if (a < 0.2) {
-                        s = "谁让你戳我的？我戳……戳不动惹";
-                    } else if (a < 0.5) {
-                        s = "莫欺少年穷，等我日后把你戳爆！";
-                    } else {
-                        s = "痛痛痛……不要再戳我惹";
+                    switch (randInt) {
+                        case 0:
+                            s = "谁让你戳我的？我戳……戳不动惹";
+                            break;
+                        case 1:
+                            s = "莫欺少年穷，等我日后把你戳爆！";
+                            break;
+                        default:
+                            s = "痛痛痛……不要再戳我惹";
                     }
                     event.getSubject().sendMessage(s);
                 }
             } else {
                 //有人戳了别人，跟着戳一戳
-                event.getTarget().nudge().sendTo(event.getSubject());
+                if (randInt == 0) {
+                    event.getTarget().nudge().sendTo(event.getSubject());
+                }
             }
         });
     }
