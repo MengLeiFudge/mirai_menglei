@@ -9,7 +9,7 @@
 
 > 该bot主要用于Arc查询、Shapez查询等，推荐使用Intellij Idea打开本项目
 > 
-> [Mirai论坛](https://mirai.mamoe.net/https://mirai.mamoe.net/)
+> [Mirai论坛](https://mirai.mamoe.net)
 
 # 使用方法
 

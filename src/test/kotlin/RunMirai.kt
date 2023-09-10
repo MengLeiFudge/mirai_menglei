@@ -23,16 +23,16 @@ suspend fun main() {
     //下面填机器人信息
 //    MiraiConsole.addBot(605738729, "mlj0909.") {
 //        fileBasedDeviceInfo()
-//        protocol = BotConfiguration.MiraiProtocol.IPAD
+//        protocol = BotConfiguration.MiraiProtocol.ANDROID_PHONE
 //    }.alsoLogin()
-//    MiraiConsole.addBot(1443944862, "mlj0909.") {
-//        fileBasedDeviceInfo()
-//        protocol = BotConfiguration.MiraiProtocol.IPAD
-//    }.alsoLogin()
-    MiraiConsole.addBot(2629227874, "mlj0909.") {
+    MiraiConsole.addBot(1443944862, "mlj0909.") {
         fileBasedDeviceInfo()
-        protocol = BotConfiguration.MiraiProtocol.IPAD
+        protocol = BotConfiguration.MiraiProtocol.ANDROID_PHONE
     }.alsoLogin()
+//    MiraiConsole.addBot(2629227874, "mlj0909.") {
+//        fileBasedDeviceInfo()
+//        protocol = BotConfiguration.MiraiProtocol.ANDROID_PHONE
+//    }.alsoLogin()
 //    MiraiConsole.addBot(3109326090, "mlj0909.") {
 //        fileBasedDeviceInfo()
 //        protocol = BotConfiguration.MiraiProtocol.IPAD

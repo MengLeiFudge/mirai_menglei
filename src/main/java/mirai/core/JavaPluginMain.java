@@ -30,6 +30,7 @@ public final class JavaPluginMain extends JavaPlugin {
     public static final JavaPluginMain INSTANCE = new JavaPluginMain();
 
     private JavaPluginMain() {
+        //FixProtocolVersion.fetch(BotConfiguration.MiraiProtocol.ANDROID_PAD, "latest");
         super(new JvmPluginDescriptionBuilder("org.menglei.mirai-mengleibot", "0.1.0")
                 .info("EG")
                 .build());

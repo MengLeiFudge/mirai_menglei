@@ -12,7 +12,7 @@ accounts:
     # "enable": true
     # "heartbeatStrategy": "STAT_HB" / "REGISTER" / "NONE"
     configuration: 
-      protocol: MACOS
+      protocol: ANDROID_PHONE
       device: device.json
       enable: true
       heartbeatStrategy: STAT_HB
