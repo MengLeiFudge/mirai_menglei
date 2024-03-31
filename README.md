@@ -56,11 +56,11 @@ dependencies 中各依赖版本可以从 [maven仓库](https://mvnrepository.com
 
 3) 如果一致，使用 WinSW 开启 qsign 服务
 
-以管理员模式打开 cmd，跳转至 qsign 目录（\plugins\qsign\unidbg-fetch-qsign-1.1.9）
+以管理员模式打开 cmd，跳转至 qsign 目录（.\plugins\qsign\unidbg-fetch-qsign-1.1.9）
 
 > PS：若之前未注册过 qsign 服务，执行以下命令注册服务（只需注册一次）：
 >
-> > qsign.exe install qsign.xml
+> > .\qsign.exe install qsign.xml
 
 执行以下命令启动服务：
 
@@ -68,4 +68,11 @@ dependencies 中各依赖版本可以从 [maven仓库](https://mvnrepository.com
 
 关闭 cmd 即可
 
+也可以直接使用 idea 的内置控制台，建议使用绝对路径，例如：
+
+> E:\project\java\miraiBot\mirai_menglei\plugins\qsign\unidbg-fetch-qsign-1.1.9\qsign.exe start
+> 
+> E:\project\java\miraiBot\mirai_menglei\plugins\qsign\unidbg-fetch-qsign-1.1.9\qsign.exe restart
+
 ## 4.重新启动项目，测试能否登录、读取消息
++
